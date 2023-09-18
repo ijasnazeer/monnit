@@ -1,0 +1,647 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    font-family: Montserrat;
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.right {
+    width: 100%;
+    height: 100vh;
+}
+
+.home {
+    background-color: #F3F5F9;
+    width: 100%;
+    height: 88vh;
+}
+/*-------------------------Header----------------------------*/
+header {
+    background-color: white;
+    height: 15%;
+    border-left: 5px solid #F3F5F9;
+    display: flex;
+    justify-content: space-between;
+}
+header .head-left {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 2%;
+}
+
+header .head-left span {
+    font-size: 32px;
+    font-weight: 700;
+    color: #092E69;
+}
+
+header .head-left caption {
+    font-size: 16px;
+    font-weight: 500;
+    color: #848D96;
+    text-align: left;
+}
+
+header .head-right {
+    height: 48px;
+    width: 160px;
+    text-align: center;
+    margin-right: 3%;
+    margin-top: 1%;
+    border: 1px solid #ABB6C7;
+    border-radius: 16px;
+    padding: 8px 16px 8px 16px;
+}
+/*-------------------------end of header----------------------------*/
+/*-------------------------Main----------------------------*/
+main {
+    background-color: #F3F5F9;
+    height: 75vh;
+    padding-top: 1%;
+    padding-left: 5%;
+    padding-bottom: 0%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* gap: 1rem; */
+}
+
+.birthday {
+    background-color: white;
+    width: 45%;
+    height: 45%;
+    border-radius: 16px;
+    display: flex;
+    box-shadow: 0px 0px 16px 1px #092E6926;
+
+    
+}
+.birthday .birthday-left {
+    background-color: #0A68FF;
+    height: 100%;
+    width: 50%;
+    border-radius: 16px;
+    position: relative;
+}
+.birthday .birthday-left date {
+    height: 26px;
+    width: auto;
+    text-align: center;
+    background-color: #FFFFFF40;
+    font-size: 12px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    border: 0.65px solid #FFFFFF;
+    border-radius: 8px;
+    padding: 5px 10px 5px 10px;
+}
+.birthday .birthday-left .birthday-content {
+    height: 65%;
+    width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translatex(-50%);
+}
+.birthday-left .birthday-content .avatar {
+    width: 35%;
+    height: 50%;
+}
+.birthday-left .birthday-content h1 {
+    font-size: 16px;
+    width: 100%;
+    font-weight: 700;
+    color: #F3F5F9;
+    margin: 10px;
+}
+.birthday-left .birthday-content h3 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #F3F5F9;
+}
+
+.birthday .birthday-right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.birthday .birthday-right .main {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.birthday .birthday-right .main .top {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.birthday .birthday-right .main .top h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #092E69;
+}
+.birthday .birthday-right .main .top .lists {
+    height: 80%;
+}
+.birthday .birthday-right .main .top .lists .list {
+    height: 32%;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.birthday .birthday-right .main .top .lists .list .left {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.birthday .birthday-right .main .top .lists .list name {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000F28;
+    margin-left: 2%;
+}
+.birthday .birthday-right .main .top .lists .list .right {
+    height: 100%;
+}
+.birthday .birthday-right .main .top .lists .list date {
+    height: 25px;
+    width: 100px;
+    width: auto;
+    text-align: center;
+    background-color: #0A68FF10;
+    font-size: 10px;
+    border: 0.65px solid #0A68FF;
+    border-radius: 8px;
+    padding: 5px 10px 5px 10px;
+    position: absolute;
+    right: 1%;
+    top: 30%;
+}
+.birthday .birthday-right .main .bottom {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    position: relative;
+}
+.birthday .birthday-right .main .bottom .right .see-all {
+    width: 59px;
+    height: 35px;
+    background-color: #0A68FF;
+    font-size: 13px;
+    padding: 8px;
+    border-radius: 8px;
+    position: absolute;
+    right: 0%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.birthday .birthday-right .main .bottom .right {
+    height: 100%;
+    /* width: auto; */
+}
+
+.birthday .birthday-right .main .bottom .left {
+    display: flex;
+    align-items: center;
+    line-height: 17px;
+    width: 70%;
+}
+.birthday .birthday-right .main .bottom .left .avatar2 {
+    margin-left: -8%;
+}
+.birthday .birthday-right .main .bottom .left span {
+    font-size: 12px;
+    font-weight: 500px;
+    color: #848D96;
+}
+
+
+/*-----------upcoming-container-------------*/
+.upcoming-container {
+    margin-top: 1%;
+    width: 45%;
+    height: 35%;
+    display: flex;
+    justify-content: space-between;
+}
+/* ------------upcoming leaves------------ */
+.upcoming-leaves {
+    background-color: white;
+    box-shadow: 0px 0px 16px 1px #092E6926;
+    width: 44%;
+    height: 100%;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.upcoming-leaves h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #092E69;
+}
+.leaves h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000F28;
+}
+.leaves date{
+    height: 22px;
+    width: auto;
+    text-align: center;
+    background-color: #0A68FF10;
+    font-size: 10px;
+    border: 0.65px solid #0A68FF;
+    border-radius: 8px;
+    padding: 5px 5px 5px 5px;
+    margin: 10px 10px;
+}
+.upcoming-leaves .see-all {
+    width: 59px;
+    height: 35px;
+    background-color: #0A68FF;
+    font-size: 13px;
+    padding: 8px;
+    border-radius: 8px;
+    margin-left: 60%;
+}
+/* ------------upcoming Holidays------------ */
+.upcoming-holidays {
+    background-color: white;
+    box-shadow: 0px 0px 16px 1px #092E6926;
+    width: 45%;
+    height: 100%;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.upcoming-holidays h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #092E69;
+}
+
+.holidays h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000F28;
+}
+.holidays date{
+    height: 22px;
+    width: 96px;
+    text-align: center;
+    background-color: #0A68FF10;
+    font-size: 10px;
+    border: 0.65px solid #0A68FF;
+    border-radius: 8px;
+    padding: 5px 10px 5px 10px;
+    margin: 10px 10px;
+}
+.upcoming-holidays .see-all {
+    width: 59px;
+    height: 35px;
+    background-color: #0A68FF;
+    font-size: 13px;
+    padding: 8px;
+    border-radius: 8px;
+    margin-left: 66%;
+}
+
+/* ------------recent hires------------ */
+.recent-hires {
+    margin-top: 1%;
+    width: 45%;
+    height: 50%;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1%;
+    box-shadow: 0px 0px 16px 1px #092E6926;
+}
+.top-section {
+    width: 90%;
+    height: 70%;
+}
+.top-section h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #092E69;
+}
+.top-section .ul {
+    width: 100%;
+}
+.top-section .ul .li  {
+    border-bottom: 0.10px solid #848d9617;
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+}
+.top-section .ul .li left {
+    display: flex;
+    width: 50%;
+
+}
+.top-section .ul .li left .name-position {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1%;
+}
+.top-section .ul .li left .name-position name {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000F28;
+}
+.top-section .ul .li left .name-position position {
+    font-size: 12px;
+    font-weight: 500;
+    color: #848D96;
+}
+
+.top-section .ul .li date {
+    height: 25px;
+    width: 110px;
+    text-align: center;
+    background-color: #0A68FF10;
+    font-size: 12px;
+    border: 0.65px solid #0A68FF;
+    border-radius: 8px;
+    padding: 5px 10px 5px 10px;
+    margin: 10px 10px;
+}
+.bottom-section {
+    margin-bottom: 1px;
+    display: flex;
+    justify-content: space-between;
+}
+.bottom-section .left {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+.bottom-section .left .avatar2 {
+    margin-left: -4%;
+}
+.bottom-section .left span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #848D96;
+}
+.bottom-section .right {
+    width: 22%;
+    height: 100%;
+}
+
+.bottom-section .right .see-all {
+    width: 59px;
+    height: 35px;
+    background-color: #0A68FF;
+    font-size: 13px;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+/* ------------announcements------------ */
+.announcements {
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 16px 1px #092E6926;
+    width: 45%;
+    height: 60%;
+    padding-top: 1%;
+    padding-left: 1.5%;
+    padding-bottom: 0%;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.announcements .main {
+    width: 95%;
+    height: 80%;
+}
+.announcements h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #092E69;
+}
+
+.announcements .lists  {
+    height: 100%;
+}
+.announcements .list  {
+    margin-bottom: 2%;
+}
+.announcements .lists .list .section-1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.announcements .lists .list .section-1 name {
+    margin-left: 1%;
+}
+.announcements .lists .list .section-1 date {
+    position: absolute;
+    right: 0%;
+    height: 26px;
+    width: 120px;
+    text-align: center;
+    background-color: #0A68FF10;
+    font-size: 12px;
+    border: 0.65px solid #0A68FF;
+    border-radius: 8px;
+    padding: 5px 10px 5px 10px;
+}
+.announcements .lists .list .section-2 {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.announcements .lists .list .section-2 .view {
+    width: 45px;
+    height: 30px;
+    padding: 8px;
+    border-radius: 8px;
+    color: #0A68FF;
+    border: 1px solid #0A68FF;
+    background-color: #FFFFFF;
+    
+}
+.announcements .bottom {
+    width: 95%;
+    display: flex;
+    justify-content: right;
+    margin-bottom: 0.5%;
+    margin-bottom: 2%;
+}
+.announcements .see-all {
+    width: 59px;
+    height: 35px;
+    background-color: #0A68FF;
+    font-size: 13px;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    header 
+    {
+        width: 100%;
+        height: 5%;
+    }
+    header .head-left
+    {
+        width: 60%;
+    }
+    header .head-left span
+    {
+        font-size: 22px;
+    }
+    header .head-left caption
+    {
+        display: none;
+    }
+    header .head-right
+    {
+        height: 50%;
+        text-align: center;
+        width: auto;
+        height: 50%;
+        margin: auto;
+        font-size: 12px;
+        padding-top: 2px;
+    }
+    /* -----------main-------------- */
+    main
+    {
+        height: auto;
+        display: block;
+        padding: 2%;
+    }
+    .birthday
+    {
+        margin: auto;
+        width: 95%;
+        height:450px;
+        display: grid;
+        position: relative;
+    }
+    .birthday .birthday-left {
+        width: 100%;
+        height: 50%;
+    }
+    .birthday .birthday-right {
+        width: 100%;
+        height: 50%;
+        position: absolute;
+        bottom: 0%;
+        border-radius: 16px;
+    }
+    /* -----------recent hires-------------- */
+    .recent-hires {
+        margin: auto;
+        margin-top: 2%;
+        width: 95%;
+        height: 310px;
+    }
+    .recent-hires .top-section
+    {
+        margin: auto;
+    }
+    .recent-hires .bottom-section
+    {
+        height: 15%;
+    }
+    .recent-hires .bottom-section .left
+    {
+        width: 75%;
+    }
+    .recent-hires .bottom-section .left span
+    {
+        font-size: 12px;
+    }
+    /* -----------Announcements-------------- */
+    .announcements
+    {
+        width: 95%;
+        height: 400px;
+        margin: auto;
+        margin-top: 2%;
+    }
+    .announcements .main
+    {
+        margin: auto;
+    }
+    .announcements .lists .list .section-2 .description
+    {
+        font-size: 13px;
+        margin-top: 1%;
+    }
+    .announcements .lists .list .section-2 .view
+    {
+        margin: auto;
+    }
+    .announcements .lists .list .section-1 date
+    {
+        width: auto;
+    }
+    .upcoming-container {
+        margin: auto;
+        margin-top: 2%;
+        width: 95%;
+        height: 500px;
+        flex-direction: column;
+    }
+    .upcoming-leaves
+    {
+        width: 100%;
+        padding-left: 10%;
+        margin: auto;
+    }
+    .upcoming-leaves .see-all
+    {
+        margin-left: 75%;
+    }
+    .upcoming-holidays
+    {
+        margin: auto;
+        width: 100%;
+        margin-top: 3%;
+        padding-left: 10%;
+    }
+    .upcoming-holidays .see-all
+    {
+        margin-left: 75%;
+    }
+}
