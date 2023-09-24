@@ -97,7 +97,7 @@ const Sidebar = () => {
         <TooltipProvider>
           <Tooltip>
             <TooltipTrigger>
-          <Link className='link' href="/">
+          <Link className='link' href="/Payment">
             <icon>
             <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M18.1666 22.8334H15.8333V31H18.1666V22.8334ZM25.1666 22.8334H22.8333V31H25.1666V22.8334ZM35.0833 33.3334H12.9166V35.6667H35.0833V33.3334ZM32.1666 22.8334H29.8333V31H32.1666V22.8334ZM24 14.97L30.0783 18.1667H17.9216L24 14.97ZM24 12.3334L12.9166 18.1667V20.5H35.0833V18.1667L24 12.3334Z" fill="#092E69"/>
