@@ -3,6 +3,7 @@ import React,{useState} from "react";
 import "./style.css";
 import Sidebar from "@/Components/Sidebar/Sidebar";
 import Topbar from "@/Components/Topbar/Topbar";
+import BankDetails from '@/components/BankDetails/BankDetails'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button";
@@ -189,7 +190,66 @@ export default function page() {
                   </div>
                   <div className="right">
                     <div className="top">
+                      <div className="earning-section">
                       <div className="heading">
+                        <div>EARNING</div>
+                        <div>PERMONTH</div>
+                      </div>
+                      <div className="content">
+                        <div className="earnings">
+                              <ul>
+                                <li>Basic</li>
+                                <li>Dearness Allowance</li>
+                                <li>House Rent Allowance</li>
+                                <li>Other Allowance</li>
+                                <li>All Cash Reimbursements</li>
+                                <li>LTA*</li>
+                                <li>Medical</li>
+                                <li>Arrears</li>
+                              </ul>
+                            </div>
+                            <div className="money">
+                            <ul>
+                                <li>15,000.00</li>
+                                <li>5,000.00</li>
+                                <li>10,000.00</li>
+                                <li>10,000.00</li>
+                                <li>5,000.00</li>
+                                <li>800.00</li>
+                                <li>800.00</li>
+                                <li>0.00</li>
+                              </ul>
+                            </div>
+                          </div>
+                      </div>
+                      <div className="deduction-section">
+                      <div className="heading">
+                        <div>DEDUCTION</div>
+                        <div>PERMONTH</div>
+                      </div>
+                      <div className="content">
+                      <div className="deduction">
+                          <ul>
+                              <li>PF</li>
+                              <li>ESI</li>
+                              <li>Income Tax*</li>
+                              <li>Loan and Advance</li>
+                              <li>perquisites</li>
+                            </ul>
+                          </div>
+                          <div className="deduction-money">
+                          <ul>
+                              <li>2,000.00</li>
+                              <li>0.00</li>
+                              <li>400.00</li>
+                              <li>1,600.00</li>
+                              <li>3,600.00</li>
+                            </ul>
+                          </div>
+                      </div>
+                      </div>
+                    </div>
+                      {/* <div className="heading">
                         <div>EARNING</div>
                         <div>PERMONTH</div>
                         <div>DEDUCTION</div>
@@ -242,8 +302,7 @@ export default function page() {
                             </ul>
                           </div>
                         </div>
-                      </div>
-                    </div>
+                      </div> */}
 
                     <div className="bottom">
                       <div className="left">
@@ -370,7 +429,10 @@ export default function page() {
 
               
               <TabsContent className="details" value="Details">
-                <div className="details-container">container</div>
+                <div className="details-container">
+                  <BankDetails />
+                  
+                </div>
               </TabsContent>
             </Tabs>
           </div>

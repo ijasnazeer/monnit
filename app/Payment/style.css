@@ -273,109 +273,118 @@ header .head-left caption {
     overflow: hidden;
 }
 .break-up-container .right .top{
-    border: 3px solid #00000014;
     width: 100%;
     height: 65%;
-}
-.break-up-container .right .top .heading{
     display: flex;
-    height: 10%;
+}
+.break-up-container .right .top .earning-section
+{
+    /* background-color: red; */
+    border: 3px solid #00000014;
+    width: 50%;
+    height: 100%;
+}
+.break-up-container .right .top .earning-section .heading
+{
     border-bottom: 3px solid #00000014;
+    display: flex;
+    height: 12%;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
 }
-.break-up-container .right .top .heading :nth-child(1){
+.break-up-container .right .top .earning-section .heading :nth-child(1) {
     color: #05A24D;
-    width: 30%;
-    padding-left: 4%;
+    padding-left: 10%;
+    padding-right: 43%;
 }
-.break-up-container .right .top .heading :nth-child(2){
+.break-up-container .right .top .earning-section .content{
+    height: 88%;
+    display: flex;
+    justify-content: space-around;
+}
+.break-up-container .right .top .earning-section .earnings {
+    width: 65%;
+    height: 100%;
+}
+.break-up-container .right .top .earning-section .earnings ul {
+    width: 100%;
+    height: 95%;
+    padding-left: 13%;
+    align-items: baseline;
+    font-size: 14px;
+    font-weight: 400;
     color: #000F28;
-    width: 20%;
-    padding-left: 5%;
-    border-right: 3px solid #00000014;
 }
-.break-up-container .right .top .heading :nth-child(3){
+.break-up-container .right .top .earning-section .money {
+    width: 30%;
+    height: 100%;
+}
+.break-up-container .right .top .earning-section .money ul {
+    width: 75%;
+    height: 95%;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000F28;
+    align-items: end;
+}
+
+
+.break-up-container .right .top .deduction-section
+{
+    /* background-color: green; */
+    border: 3px solid #00000014;
+    border-left: none;
+    width: 50%;
+    height: 100%;
+}
+.break-up-container .right .top .deduction-section .heading {
+    border-bottom: 3px solid #00000014;
+    display: flex;
+    height: 12%;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+.break-up-container .right .top .deduction-section .heading :nth-child(1) {
     color: #F75B4F;
-    padding-left: 5%;
-    width: 30%;
+    padding-left: 10%;
+    padding-right: 38%;
 }
-.break-up-container .right .top .heading :nth-child(4){
-    color: #000F28;
-    padding-left: 5%;
-}
-.break-up-container .right .top .content {
+.break-up-container .right .top .deduction-section .content{
+    height: 88%;
     display: flex;
-    height: 90%;
+    justify-content: space-around;
 }
-
-
-.break-up-container .right .top .content .left {
-    width: 50%;
-    height: 100%;
-    /* background-color: cyan; */
-    border-right: 3px solid #00000014;
-    display: flex;
-    flex-direction: row;
-}
-.break-up-container .right .top .content .left .earnings {
+.break-up-container .right .top .deduction-section .content .deduction {
     width: 65%;
     height: 100%;
 }
-.break-up-container .right .top .content .left .earnings ul {
+.break-up-container .right .top .deduction-section .deduction {
+    width: 65%;
+    height: 100%;
+}
+.break-up-container .right .top .deduction-section .deduction ul {
     width: 100%;
-    height: 95%;
+    height: 60%;
     padding-left: 13%;
     align-items: baseline;
     font-size: 14px;
     font-weight: 400;
     color: #000F28;
 }
-.break-up-container .right .top .content .left .money {
+.break-up-container .right .top .deduction-section .deduction-money {
     width: 30%;
     height: 100%;
 }
-.break-up-container .right .top .content .left .money ul {
+.break-up-container .right .top .deduction-section .deduction-money ul {
     width: 75%;
-    height: 95%;
+    height: 60%;
     font-size: 14px;
     font-weight: 400;
     color: #000F28;
     align-items: end;
 }
-
-
-.break-up-container .right .top .content .right {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-}
-.break-up-container .right .top .content .right .deduction {
-    width: 65%;
-    height: 100%;
-}
-.break-up-container .right .top .content .right .deduction ul {
-    width: 100%;
-    height: 56%;
-    padding-left: 13%;
-    align-items: baseline;
-    font-size: 14px;
-    font-weight: 400;
-    color: #000F28;
-}
-.break-up-container .right .top .content .right .deduction-money {
-    width: 30%;
-    height: 56%;
-}
-.break-up-container .right .top .content .right .deduction-money ul {
-    width: 75%;
-    height: 100%;
-    font-size: 14px;
-    font-weight: 400;
-    color: #000F28;
-    align-items: end;
-}
-
-
 .break-up-container .right .bottom{
     width: 100%;
     height: 25%;
@@ -505,51 +514,298 @@ header .head-left caption {
 /* .taxes-container .right Table .tablebody .tablerow {
     background-color: red;
 } */
-.p-4 { /*already defined classname for table padding*/
+.taxes-container .p-4 { /*already defined classname for table padding*/
     padding: .55rem;
     padding-left: 5rem;
 }
 /*-------------------------end of taxes------------*/
 /*-------------------------all bank details----------------------------*/
 .details {
-    background-color: red;
     width: 100%;
     height: 65vh;
 }
 .details-container {
-    background-color: cyan;
+    /* background-color: cyan; */
     width: 100%;
     height:100%;
-    margin: auto;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*-------------------------end of all bank details----------------------------*/
+
+
+@media screen and (max-width: 768px) {
+    header 
+    {
+        width: 100%;
+        height: 5%;
+    }
+    header .head-left span
+    {
+        font-size: 22px;
+    }
+    header .head-left caption
+    {
+        display: none;
+    }
+    /*-------------------------tabs----------------------------*/
+    .payment
+    {
+        background-color: #FFFFFF;
+    }
+    .payment-main
+    {
+        border: none;
+    }
+    .payment-main .tabs .tablist
+    {
+        overflow-x: scroll;
+        height: 13%;
+        padding: 0%;
+        display: flex;
+    }
+    .payment-main .tabs .tablist::-webkit-scrollbar
+    {
+        display: none;
+    }
+    .payment-main .tabs .tablist .tabstrigger
+    {
+        height: 100%;
+        width: 100%;
+    }
+    /*--------end of tabs------------*/
+    
+    /* -----------main-------------- */
+    .payment-main .account .section-1{
+        height: 65vh;
+        display: block;
+        overflow: scroll;
+    }
+    .payment-main .account .section-1 .child {
+        margin: auto;
+        margin-bottom: 5%;
+        width: 95%;
+        height: 12%;
+    }
+    .payment-main .account .section-1 .ifsc svg /*svg-icon for ifsc*/
+    {
+        bottom: 15%;
+        right: 2%;
+    }
+    .payment-main .account .section-1 .ifsc .bottom-of-child .left
+    {
+        width: 75%;
+    }
+    .payment-main .account .section-1 .ifsc .bottom-of-child .button
+    {
+        height: 95%;
+    }
+    .payment-main .account .confirm-button{
+        margin-left: 5%;
+        margin-top: 3%;
+        width: 90%;
+    }
+    /*-------------------------Pay-slip Download----------------------------*/
+    .payment-main .pay-slip
+    {
+        height: 70%;
+        width: 95%;
+        margin: auto;
+    }
+    .label-year
+    {
+        top: 5%;
+        left: 5%;
+    }
+    .select-year
+    {
+        width: 350px;
+        height: 48px;
+        top: 12%;
+        left: 2%;
+    }
+    .label-month
+    {
+        top: 25%;
+        left: 5%;
+    }
+    .select-month
+    {
+        width: 350px;
+        height: 48px;
+        top: 32%;
+        left: 2%;
+    }
+    .checkbox
+    {
+        left: 25%;
+        top: 50%;
+    }
+    .label-checkbox
+    {
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .pay-slip .button
+    {
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    /*-------------------------end of Pay-slip Download----------------------------*/
+    /*-------------------------salary break up----------------------------*/
+    .break-up {
+        height: 100%;
+    }
+    .break-up-container {
+        display: block;
+        height: 100%;
+        
+    }
+    .break-up-container .left {
+        margin: auto;
+        width: 95%;
+        height: 12%;
+    }
+    .break-up-container .right {
+        margin: auto;
+        width: 100%;
+        height: 98%;
+        margin-top: 4%;
+        overflow: visible;
+    }
+    
+    .break-up-container .right .top{
+        width: 100%;
+        height: 85%;
+        flex-direction: column;
+    }
+    .break-up-container .right .top .earning-section
+    {
+        width: 100%;
+        padding: 0%;
+    }
+    .break-up-container .right .top .earning-section .content
+    {
+        justify-content: flex-start;
+    }
+    .break-up-container .right .top .earning-section .earnings
+    {
+        width: 60%;
+    }
+    .break-up-container .right .top .earning-section .earnings ul li
+    {
+        width: 90%;
+    }
+    .break-up-container .right .top .earning-section .money
+    {
+        width: 40%;
+    }
+    .break-up-container .right .top .earning-section .money ul
+    {
+        align-items: center;
+        width: 45%;
+    }
+    .break-up-container .right .top .earning-section .heading :nth-child(1) {
+        padding-left: 8%;
+        padding-right: 40%;
+    }
+    .break-up-container .right .top .deduction-section
+    {
+        width: 100%;
+        height: 60%;
+        margin-top: 1%;
+        border-left: 3px solid #00000014;
+    }
+    .break-up-container .right .top .deduction-section .content
+    {
+        justify-content: flex-start;
+    }
+    .break-up-container .right .top .deduction-section .heading :nth-child(1)
+    {
+        padding-left: 8%;
+        padding-right: 31%;
+    }
+    .break-up-container .right .top .deduction-section .deduction ul
+    {
+        width: 90%;
+        height: 80%;
+    }
+    .break-up-container .right .top .deduction-section .deduction ul li
+    {
+        width: 90%;
+    }
+    .break-up-container .right .top .deduction-section .deduction-money
+    {
+        width: 35%;
+    }
+    .break-up-container .right .top .deduction-section .deduction-money ul
+    {
+        align-items: baseline;
+        width: 80%;
+        height: 80%;
+    }
+    .break-up-container .right .bottom{
+        display: block;
+        height: 20%;
+    }
+    .break-up-container .right .bottom .left {
+        width: 100%;
+        height: 65%;
+    }
+    .break-up-container .right .bottom .right
+    {
+        height: 30%;
+        width: 100%;
+        margin: 0%;
+    }
+    .break-up-container .right .bottom .right :nth-child(1)
+    {
+        top: 12%;
+        right: 0%;
+    }
+    
+    /*-------------------------Taxes----------------------------*/
+    .taxes
+    {
+        height: 75vh;
+    }
+    .taxes-container
+    {
+        width: 99%;
+        height: 100%;
+        flex-direction: column;
+    }
+    .taxes-container .left {
+        width: 95%;
+        height: 35%;
+        margin: auto;
+        margin-top: 2%;
+        justify-content: space-between;
+    }
+    .taxes-container .right {
+        margin: auto;
+        margin-top: 2%;
+        width: 100%;
+    }
+    .taxes-container .right Table {
+        width: 99%;
+        margin: auto;
+    }
+    .taxes-container .right Table .tableheader .tablehead{
+        padding-left: 2rem;
+    }
+    .taxes-container .p-4 { /*already defined classname for table padding*/
+        padding: 0%;
+        padding-top: 3.5%;
+        padding-left: 8%;
+    }
+        /*-------------------------end of Taxes----------------------------*/
+        /*-------------------------details----------------------------*/
+
+    .details
+    {
+        height: 70vh;
+    }
+        /*-------------------------end of details----------------------------*/
+}
