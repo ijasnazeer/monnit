@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    font-family: Montserrat;
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.right {
+    width: 100%;
+    height: 100vh;
+}
+
+.goal {
+    background-color: #F3F5F9;
+    width: 100%;
+    height: 88vh;
+}
+/*-------------------------Header----------------------------*/
+header {
+    background-color: white;
+    height: 15%;
+    border-left: 5px solid #F3F5F9;
+    border-bottom: 5px solid #F3F5F9;
+    display: flex;
+    justify-content: space-between;
+}
+header .head-left {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 2%;
+}
+
+header .head-left span {
+    font-size: 32px;
+    font-weight: 700;
+    color: #092E69;
+}
+
+header .head-left caption {
+    font-size: 16px;
+    font-weight: 500;
+    color: #848D96;
+    text-align: left;
+}
+
+header .head-right {
+    margin: 0%;
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: none;
+}
+header .head-right select{
+    width: 150px;
+    border-radius: 16px;
+    padding: 8px 16px 8px 16px;
+    background-color: #F4F8FB;
+}
+header .head-right button {
+    background-color: #0A68FF;
+    border-radius: 16px;
+    position: relative;
+    width: 40%;
+}
+header .head-right button svg {
+    position: absolute;
+    right: 5%;
+}
+/*-------------------------end of header----------------------------*/
+/*-------------------------Main----------------------------*/
+.goal-main {
+    width: 100%;
+    height: 90%;
+    overflow-y: scroll;
+    background-color: #FFFFFF;
+    border-left: 5px solid #F3F5F9;
+}
+.goal-main::-webkit-scrollbar {
+    display: none;
+}
+.goal-main .goals {
+    border-bottom: 3px solid #F3F5F9;
+    margin-left: 1%;
+    margin-top: 1%;
+    width: 98%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.goal-main .goals .goal-top-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 20%;
+    width: 99%;
+    position: relative;
+}
+.goal-main .goals .goal-top-section name{
+    color: #000F28;
+    font-size: 20px;
+    font-weight: 600;
+}
+.goal-main .goals .goal-top-section .completed-date{
+    background-color: #E7F0FF99;
+    max-width: fit-content;
+    font-size: 10px;
+    border-radius: 6px;
+    padding: 2px;
+
+}
+.goal-main .goals .goal-top-section .completed-date span{
+    font-size: 10px;
+    font-weight: 600;
+}
+.goal-main .goals .goal-top-section .select{
+    position: absolute;
+    right: 1%;
+}
+.goal-main .goals .goal-description{
+    width: 76%;
+    font-size: 14px;
+    font-weight: 400;
+    color: #848D96;
+}
+.goal-main .goals .company-profile-container{
+    /* background-color: yellow; */
+    width: 30%;
+    height: 10%;
+    display: flex;
+}
+.goal-main .goals .company-profile-container div{
+    height: 100%;
+    width: 45%;
+    display: flex;
+    background-color: #EEEEEE;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000F28;
+    margin-left: 2%;
+    padding: 5px;
+    border-radius: 6px;
+}
+.goal-main .goals .company-profile-container div svg {
+    /* background-color: yellowgreen; */
+    margin-right: 5%;
+    margin-top: 1%;
+}
+.goal-main .goals .comments{
+    background-color: #E7F0FF;
+    height: 30%;
+    width: 100%;
+    border-radius: 12px;
+    padding: 7px;
+}
+.goal-main .goals .comment{
+    margin: auto;
+    margin-bottom: 5px;
+    /* border: 1px solid black; */
+    width: 99%;
+    height: 48%;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000F28;
+}
+.goal-main .goals .comment .avatar {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+  
+/*-------------------------end of Main----------------------------*/
+
+@media screen and (max-width: 768px) {
+    header 
+    {
+        width: 100%;
+        height: 8%;
+    }
+    header .head-left span
+    {
+        font-size: 22px;
+    }
+    header .head-left caption
+    {
+        display: none;
+    }
+    header .head-right
+    {
+        width: 75%;
+    }
+    header .head-right select
+    {
+        width: 40%;
+        height: 60%;
+        font-size: 13px;
+    }
+    header .head-right button
+    {
+        width: 50%;
+        padding-left: 0%;
+        font-size: 12px;
+
+    }
+    .goal-main .goals
+    {
+        height: 55%;
+    }
+    .goal-main .goals .goal-top-section name
+    {
+        font-size: 18px;
+
+    }
+    .goal-main .goals .goal-description
+    {
+        width: 99%;
+        margin: auto;
+    }
+    .goal-main .goals .company-profile-container
+    {
+        width: 99%;
+        margin-left: auto;
+        margin-top: 1%;
+        margin-bottom: 2%;
+        height: 8%;
+        display: flex;
+    }
+    .goal-main .goals .company-profile-container div svg
+    {
+        margin-top: 2%;
+    }
+}

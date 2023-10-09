@@ -1,0 +1,132 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.container {
+    background-color: #FFFFFF;
+    border-radius: 24px;
+    box-shadow: 0px 0px 16px 1px #092E6926;
+    padding: 1%;
+    margin: auto;
+    margin-top: 2%;
+    width: 95%;
+    height: 90vh;
+}
+.container .head {
+    width: 99%;
+    margin: auto;
+    margin-top: 1%;
+    position: relative;
+}
+.container .head .change-password {
+    font-size: 32px;
+    font-weight: 700;
+    color: #092E69;
+}
+.container .head svg{
+    position: absolute;
+    right: 0.5%;
+    top: 3%;
+}
+.container .head .note-1 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #F75B4F;
+}
+.container .head .note-2 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #848D96;
+}
+/*--------------head close---------------*/
+/*--------------   main  ---------------*/
+
+.container .main {
+    width: 99%;
+    height: 80%;
+    margin: auto;
+    margin-top: 1%;
+    border-top: 4px solid #F3F5F9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container .main .password {
+    width: 35%;
+    height: 14%;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000F28;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 3%;
+}
+.container .main .password Input{
+    background-color: #F4F8FB;
+    border-radius: 16px;
+}
+.container .main .buttons {
+    width: 14%;
+    display: flex;
+    justify-content: space-between;
+}
+.container .main .buttons :nth-child(1) {
+    background-color: #0A68FF;
+    border-radius: 16px;
+    width: 88px;
+    height: 44px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.container .main .buttons :nth-child(2) {
+    background-color: #FFFFFF;
+    width: 88px;
+    height: 44px;
+    color: #0A68FF;
+    border: 1px solid #0A68FF;
+    border-radius: 16px;
+    font-size: 16px;
+    font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+    .container
+    {
+        border-radius: 0px;
+        box-shadow: none;
+        width: 99%;
+        height: 100vh;
+    }
+    .container .head
+    {
+        width: 99%;
+        /* height: 10%; */
+        padding-left: 2%;
+    }
+    .container .head .change-password {
+        padding-top: 5%;
+    }
+    .container .head .note-1,
+    .container .head .note-2
+    {
+        /* display: none; */
+        font-size: 14px;
+    }
+    /*--------------   main  ---------------*/
+    .container .main {
+        justify-content: flex-start;
+        padding-top: 10%;
+        
+    }
+    .container .main .password {
+        width: 90%;
+        height: 12%;
+        font-size: 17px;
+    }
+    .container .main .buttons {
+        width: 50%;
+        
+    }
+}
