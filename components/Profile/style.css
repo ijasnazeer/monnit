@@ -3,33 +3,37 @@
     padding: 0%;
 }
 
-.container {
+.profile-container {
     background-color: #FFFFFF;
-    border-radius: 24px;
-    box-shadow: 0px 0px 16px 1px #092E6926;
-    padding: 1%;
-    margin: auto;
-    margin-top: 1%;
-    width: 95%;
-    height: 95vh;
+    /* border-radius: 24px; */
+    /* box-shadow: 0px 0px 16px 1px #092E6926; */
+    /* padding: 1%; */
+    /* margin: auto; */
+    /* margin-top: 1%; */
+    width: 99%;
+    /* height: 95vh; */
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
 }
-.container .head {
+.profile-container .head {
     width: 99%;
     margin: auto;
     margin-top: 1%;
     position: relative;
+    display: none;
 }
-.container .head .profile {
+.profile-container .head .profile {
     font-size: 32px;
     font-weight: 700;
     color: #092E69;
 }
-.container .head svg{
+.profile-container .head svg{
     position: absolute;
     right: 0.5%;
     top: 3%;
 }
-.container .head .note {
+.profile-container .head .note {
     font-size: 16px;
     font-weight: 500;
     color: #F75B4F;
@@ -37,15 +41,15 @@
 /*--------------head close---------------*/
 /*--------------   main  ---------------*/
 
-.container .main {
+.profile-container .main {
     width: 99%;
-    height: 85%;
+    height: 100%;
     margin: auto;
-    margin-top: 1%;
-    border-top: 4px solid #F3F5F9;
+    margin-top: 0%;
+    /* border-top: 4px solid #F3F5F9; */
     display: flex;
 }
-.container .main .left {
+.profile-container .main .left {
     width: 20%;
     height: 100%;
     display: flex;
@@ -53,27 +57,27 @@
     align-items: center;
     padding-top: 2%;
 }
-.container .main .left .image{
+.profile-container .main .left .image{
     width: 50%;
     height: 25%;
     position: relative;
 }
-.container .main .left .avatar{
+.profile-container .main .left .avatar{
     height: 100%;
     width: 100%;
 }
-.container .main .left .image svg{
+.profile-container .main .left .image svg{
     position: absolute;
     bottom: 0%;
     right: 0%;
 }
-.container .main .left .name{
+.profile-container .main .left .name{
     font-size: 24px;
     font-weight: 500;
     color: #092E69;
     margin-top: 5%;
 }
-.container .main .left .position{
+.profile-container .main .left .position{
     font-size: 16px;
     font-weight: 400;
     color: #848D96;
@@ -82,7 +86,7 @@
 
 
 
-.container .main .right {
+.profile-container .main .right {
     border-left: 5px solid #F3F5F9;
     width: 80%;
     height: auto;
@@ -92,23 +96,23 @@
     justify-content: space-around;
     gap: 10px;
 }
-.container .main .right .detail {
+.profile-container .main .right .detail {
     width: 35%;
     height: 13%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.container .main .right .detail .caption {
+.profile-container .main .right .detail .caption {
     display: flex;
     font-size: 16px;
     font-weight: 500;
     color: #000F28;
 }
-.container .main .right .detail svg {
+.profile-container .main .right .detail svg {
     margin-left: 2%;
 }
-.container .main .right .detail Input {
+.profile-container .main .right .detail Input {
     background-color: #F4F8FB;
     font-size: 14px;
     font-weight: 500;

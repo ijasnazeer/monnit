@@ -1,0 +1,57 @@
+.document-component {
+    height: 90%;
+    width: 100%;
+    margin: auto;
+    margin-top: 1%;
+    border-top: 5px solid #F3F5F9;
+    overflow-y: scroll;
+}
+.document-component::-webkit-scrollbar {
+    display: none;
+}
+.document-component .section {
+    width: 97%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 1%;
+    border-bottom: 4px solid #EBEBEB;
+}
+.document-component .section .heading{
+    font-size: 16px;
+    font-weight: 500;
+    color: #000F28;
+}
+.document-component .section .detail{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000F28;
+    margin-bottom: 1%;
+}
+.document-component .section .detail :nth-child(1) {
+    width: 20%;
+    display: flex;
+}
+.document-component .section .detail :nth-child(5) {
+    background-color: #0A68FF;
+    color: #F3F5F9;
+    width: 117px;
+    height: 44px;
+    padding: 12px, 16px, 12px, 16px;
+    border-radius: 16px;
+}
+.document-component .section .detail :nth-child(6) {
+    background-color: #FFFFFF;
+    border: 1px solid #0A68FF;
+    color: #0A68FF;
+    width: 118px;
+    height: 44px;
+    padding: 12px, 16px, 12px, 16px;
+    border-radius: 16px;
+}

@@ -1,0 +1,39 @@
+.bankaccount-component {
+    height: 35%;
+    width: 100%;
+    margin: auto;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bankaccount-component .top {
+    height: 45%;
+    width: 100%;
+    display: flex;
+}
+.bankaccount-component .bottom {
+    height: 45%;
+    width: 100%;
+    display: flex;
+}
+.bankaccount-component .section{
+    width: 30%;
+    height: 95%;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000F28;
+    position: relative;
+}
+.bankaccount-component .section div Input{
+    background-color: #F4F8FB;
+}
+.bankaccount-component .section div svg{
+    position: absolute;
+    bottom: 5%;
+    right: 1%;
+}

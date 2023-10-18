@@ -9,10 +9,10 @@ import { Input } from '@/components/ui/input';
 
 
 
-export default function page() {
+export default function profile() {
 
   return (
-    <div className='container'>
+    <div className='profile-container'>
         
         <div className='head'>
             <div className='profile'>Profile</div>
