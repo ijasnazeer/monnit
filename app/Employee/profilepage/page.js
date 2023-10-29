@@ -7,6 +7,7 @@ import Topbar from "@/Components/Topbar/Topbar";
 import Profile from "@/Components/Profile/profile";
 import Documents from "@/Components/Documents/Documents";
 import BankAccount from "@/Components/BankAccount/BankAccount";
+import Performance from "@/Components/Performance/Performance";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Button } from "@/components/ui/button";
@@ -69,7 +70,7 @@ export default function page() {
               Timesheet
               </TabsContent>
               <TabsContent className="Performance" value="Performance">
-              Performance
+              <Performance />
               </TabsContent>
               <TabsContent className="Documents" value="Documents">
                 <Documents />
