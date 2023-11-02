@@ -1,0 +1,51 @@
+.attendance-component {
+    height: 95%;
+    width: 97%;
+    margin: auto;
+    margin-top: 1.5%;
+    box-shadow: 0px 0px 16px 1px #092E6926;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.attendance-component .head {
+    width: 97%;
+    margin: auto;
+    margin-top: 1%;
+    height: 10%;
+    border-bottom: 2px solid #F3F5F9;
+}
+.attendance-component .head div{
+    display: flex;
+    justify-content: space-between;
+}
+.attendance-component .head div span {
+    font-size: 18px;
+    font-weight: 600;
+    color: #092E69;
+}
+.attendance-component .head div .right-side{
+    width: 30%;
+}
+.attendance-component .head div .right-side .paging {
+    width: 40%;
+    font-size: 18px;
+    font-weight: 600;
+    color: #092E69;
+}
+.attendance-component .head div .right-side .page-balls {
+    width: 55%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+.attendance-component .body {
+    width: 98%;
+    height: 80%;
+    margin: auto;
+    background-color: yellow;
+}

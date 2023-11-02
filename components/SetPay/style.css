@@ -223,3 +223,79 @@
 .setpay-component .bottom .net-pay :nth-child(2) {
     color: #05A24D;
 }
+
+@media screen and (max-width: 768px) {
+    .setpay-component
+    {
+        border: none;
+    }
+    .setpay-component::-webkit-scrollbar
+    {
+        display: none;
+    }
+    .setpay-component .top
+    {
+        display: block;
+        /* height: 80%; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .setpay-component .top .earning-section {
+        width: 100%;
+        height: 49%;
+    }
+    .setpay-component .top .earning-section .earning-defination
+    {
+        height: 20%;
+        padding-left: 5%;
+        padding-right: 1%;
+    }
+    .setpay-component .top .earning-section .heading
+    {
+        height: 15%;
+    }
+    .setpay-component .top .earning-section .heading :nth-child(1)
+    {
+        padding-left: 10%;
+        padding-right: 40%;
+    }
+    .setpay-component .top .deduction-section {
+        width: 100%;
+        height: 45%;
+        border-left: none;
+    }
+    .setpay-component .top .deduction-section .deduction-defination {
+        padding-left: 5%;
+        padding-right: 1%;
+        height: 20%;
+    }
+    .setpay-component .top .deduction-section .deduction-defination div
+    {
+        width: 170px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .setpay-component .top .earning-section .earning-defination Button,
+    .setpay-component .top .deduction-section .deduction-defination div :nth-child(1),
+    .setpay-component .top .deduction-section .deduction-defination div :nth-child(2)
+    {
+        height: 30px;
+        width: 80px;
+        padding: 1px;
+        font-size: 12px;
+        margin-left: 2%;
+    }
+    .setpay-component .top .deduction-section .heading
+    {
+        height: 15%;
+    }
+    .setpay-component .top .deduction-section .heading :nth-child(1)
+    {
+        padding-right: 34%;
+    }
+    .setpay-component .bottom {
+        height: 25%;
+        margin-bottom: 1%;
+    }
+}

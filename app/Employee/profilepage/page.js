@@ -8,6 +8,7 @@ import Profile from "@/Components/Profile/profile";
 import Documents from "@/Components/Documents/Documents";
 import BankAccount from "@/Components/BankAccount/BankAccount";
 import Performance from "@/Components/Performance/Performance";
+import Attendance from "@/Components/Attendance/Attendance";
 import SetPay from "@/components/SetPay/SetPay";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
@@ -64,7 +65,7 @@ export default function page() {
               </TabsContent>
 
               <TabsContent className="Attendance" value="Attendance">
-              Attendance
+              <Attendance />
               </TabsContent>
                             
               <TabsContent className="Timesheet" value="Timesheet">
