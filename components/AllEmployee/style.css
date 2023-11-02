@@ -67,14 +67,6 @@
 
 
 
-
-
-
-
-
-
-
-
 /*--------------------------pagination----------------------*/
 .pagination {
     width: 25%;
@@ -117,3 +109,46 @@
     background-color: #2F80ED;
 }
 /* end of pagination */
+
+@media screen and (max-width: 768px) {
+    .AllEmployee-container
+    {
+        height: 100%;
+    }
+    .AllEmployee-container .TableRow
+    {
+        height: 65px;
+        margin-bottom: 2%;
+    }
+    .p-4
+    {
+        padding: 0%;
+    }
+    .TableCell-left
+    {
+        width: 40%;
+    }
+    .TableCell-left :nth-child(2) {
+        font-size: 14px;
+    }
+    .TableCell-left .position {
+        font-size: 11px;
+    }
+    .TableCell-right
+    {
+        width: 55%;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .TableCell-right .reset-button,
+    .TableCell-right .profile,
+    .TableCell-right .deactivate,
+    .TableCell-right .activate
+    {
+        width: 66px;
+        height: 35px;
+        line-height: 12px;
+        border-radius: 6px;
+        font-size: 11px;
+    }
+}

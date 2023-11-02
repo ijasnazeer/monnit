@@ -123,3 +123,35 @@ header .head-left caption {
 } */
 
 /*-------------------------end of Documents----------------------------*/
+
+
+@media screen and (max-width: 768px) {
+    header 
+    {
+        width: 100%;
+        height: 10%;
+    }
+    header .head-left span
+    {
+        font-size: 22px;
+    }
+    header .head-left caption
+    {
+        display: none;
+    }
+    .proflepage-main {
+        height: 85vh;
+        border: none;
+    }
+    .proflepage-main .tabs .tablist {
+        padding: 0%;
+        justify-content: space-between;
+        overflow-x: scroll;
+    }
+    .proflepage-main .tabs .tablist::-webkit-scrollbar {
+        display: none;
+    }
+    .proflepage-main .tabs .tablist .tabstrigger {
+        width: 45%;
+    }
+}

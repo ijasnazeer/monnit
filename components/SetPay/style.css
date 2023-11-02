@@ -1,0 +1,225 @@
+.setpay-component {
+    height: 100%;
+    width: 100%;
+    margin-top: 1%;
+    border-top: 5px solid #F3F5F9;
+    overflow-y: scroll;
+}
+/* .setpay-component::-webkit-scrollbar {
+    display: none;
+} */
+.setpay-component .top {
+    display: flex;
+    height: 80%;
+}
+
+.setpay-component .top .earning-section {
+    width: 50%;
+    border-bottom: 5px solid #F3F5F9;
+}
+.setpay-component .top .earning-section .earning-defination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15%;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000F28;
+    border-bottom: 5px solid #F3F5F9;
+}
+.setpay-component .top .earning-section .earning-defination button
+{
+    height: 30px;
+    width: 90px;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: #0A68FF;
+}
+.setpay-component .top .earning-section .heading {
+    border-bottom: 5px solid #00000014;
+    display: flex;
+    height: 12%;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+.setpay-component .top .earning-section .heading :nth-child(1){
+    color: #05A24D;
+    padding-left: 10%;
+    padding-right: 57%;
+}
+.setpay-component .top .earning-section .content {
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+.setpay-component .top .earning-section .earnings {
+    width: 65%;
+    height: 100%;
+}
+.setpay-component .top .earning-section .earnings ul {
+    width: 100%;
+    height: 95%;
+    padding-left: 13%;
+    align-items: baseline;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000F28;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.setpay-component .top .earning-section .money {
+    width: 30%;
+    height: 100%;
+}
+.setpay-component .top .earning-section .money ul {
+    width: 75%;
+    height: 95%;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000F28;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+}
+
+
+
+.setpay-component .top .deduction-section {
+    width: 50%;
+    border-bottom: 5px solid #F3F5F9;
+    border-left: 5px solid #F3F5F9;
+}
+.setpay-component .top .deduction-section .deduction-defination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15%;
+    padding-left: 10%;
+    padding-right: 6%;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000F28;
+    border-bottom: 5px solid #F3F5F9;
+}
+.setpay-component .top .deduction-section .deduction-defination div {
+    width: 200px;
+}
+.setpay-component .top .deduction-section .deduction-defination div :nth-child(1)
+{
+    height: 30px;
+    width: 100px;
+    border-radius: 8px;
+    padding: 6px;
+    background-color: #FFFFFF;
+    color: #0A68FF;
+    border: 1px solid #0A68FF;
+    margin-right: 1%;
+}
+.setpay-component .top .deduction-section .deduction-defination div :nth-child(2)
+{
+    height: 30px;
+    width: 90px;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: #0A68FF;
+}
+.setpay-component .top .deduction-section .heading {
+    border-bottom: 5px solid #00000014;
+    display: flex;
+    height: 12%;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+.setpay-component .top .deduction-section .heading :nth-child(1){
+    color: #F75B4F;
+    padding-left: 10%;
+    padding-right: 55%;
+}
+.setpay-component .top .deduction-section .content {
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+.setpay-component .top .deduction-section .deduction {
+    width: 65%;
+    height: 100%;
+}
+.setpay-component .top .deduction-section .deduction ul {
+    width: 100%;
+    height: 70%;
+    padding-left: 13%;
+    align-items: baseline;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000F28;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.setpay-component .top .deduction-section .deduction-money {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.setpay-component .top .deduction-section .deduction-money ul {
+    width: 65%;
+    height: 70%;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000F28;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+}
+
+
+
+
+
+
+
+.setpay-component .bottom {
+    height: 30%;
+    width: 95%;
+    margin: auto;
+}
+.setpay-component .bottom .gross{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 16px;
+    font-weight: 600;
+    border-bottom: 5px solid #F3F5F9;
+}
+.setpay-component .bottom .gross .gross-earning {
+    display: flex;
+    justify-content: space-between;
+    color: #05A24D;
+}
+.setpay-component .bottom .gross .gross-deduction {
+    display: flex;
+    justify-content: space-between;
+    color: #F75B4F;
+}
+.setpay-component .bottom .net-pay{
+    height: 40%;
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000F28;
+}
+.setpay-component .bottom .net-pay :nth-child(2) {
+    color: #05A24D;
+}

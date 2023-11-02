@@ -37,3 +37,36 @@
     bottom: 5%;
     right: 1%;
 }
+
+@media screen and (max-width: 768px) {
+    .bankaccount-component
+    {
+        height: 70%;
+        border: none;
+    }
+    .bankaccount-component .top
+    {
+        display: block;
+        height: 40%;
+    }
+    .bankaccount-component .top .section
+    {
+        height: 45%;
+        width: 95%;
+        margin: auto;
+        margin-bottom: 4%;
+    }
+    .bankaccount-component .bottom
+    {
+        display: block;
+        height: 60%;
+        margin-top: 4%;
+    }
+    .bankaccount-component .bottom .section
+    {
+        height: 30%;
+        width: 95%;
+        margin: auto;
+        margin-bottom: 4%;
+    }
+}

@@ -8,6 +8,7 @@ import Profile from "@/Components/Profile/profile";
 import Documents from "@/Components/Documents/Documents";
 import BankAccount from "@/Components/BankAccount/BankAccount";
 import Performance from "@/Components/Performance/Performance";
+import SetPay from "@/components/SetPay/SetPay";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Button } from "@/components/ui/button";
@@ -79,7 +80,7 @@ export default function page() {
                 <BankAccount />
               </TabsContent>
               <TabsContent className="Setpay" value="Setpay">
-              Set pay
+              <SetPay />
               </TabsContent>
             </Tabs>
           </div>

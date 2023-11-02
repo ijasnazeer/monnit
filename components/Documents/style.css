@@ -55,3 +55,46 @@
     padding: 12px, 16px, 12px, 16px;
     border-radius: 16px;
 }
+
+@media screen and (max-width: 768px) {
+    .document-component
+    {
+        border: none;
+    }
+    .document-component .section
+    {
+        width: 99%;
+        margin-top: 3%;
+    }
+    .document-component .section .heading
+    {
+        font-size: 15px;
+        padding-left: 4%;
+    }
+    .document-component .section .detail{
+        width: 100%;
+        margin-bottom: 2%;
+        justify-content: space-around;
+        font-size: 11px;
+    }
+    .document-component .section .detail :nth-child(1) {
+        width: 30%;
+        height: 75%;
+        gap: 5px;
+        align-items: center;
+    }
+    .document-component .section .detail :nth-child(3),
+    .document-component .section .detail :nth-child(4)
+    {
+        display: none;
+    }
+    .document-component .section .detail :nth-child(5),
+    .document-component .section .detail :nth-child(6)
+    {
+        width: 82px;
+        height: 32px;
+        border-radius: 10px;
+        padding: 2px;
+        font-size: 13px;
+    }
+}
