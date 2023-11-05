@@ -1,0 +1,40 @@
+{
+  "employees": [
+    {
+      "employee_id": "E001",
+      "name": "Abhishek Saho",
+      "attendance": [
+        {
+          "date": "2023-11-01",
+          "status": "present"
+        },
+        {
+          "date": "2023-11-02",
+          "status": "absent"
+        },
+        {
+          "date": "2023-11-03",
+          "status": "holiday"
+        }
+      ]
+    },
+    {
+      "employee_id": "E002",
+      "name": "Jane Smith",
+      "attendance": [
+        {
+          "date": "2023-11-01",
+          "status": "absent"
+        },
+        {
+          "date": "2023-11-02",
+          "status": "present"
+        },
+        {
+          "date": "2023-11-03",
+          "status": "holiday"
+        }
+      ]
+    }
+  ]
+}

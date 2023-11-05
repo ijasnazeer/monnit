@@ -1,6 +1,6 @@
 .attendance-component {
-    height: 95%;
-    width: 97%;
+    height: 99%;
+    width: 96%;
     margin: auto;
     margin-top: 1.5%;
     box-shadow: 0px 0px 16px 1px #092E6926;
@@ -25,17 +25,9 @@
     font-weight: 600;
     color: #092E69;
 }
-.attendance-component .head div .right-side{
-    width: 30%;
-}
-.attendance-component .head div .right-side .paging {
-    width: 40%;
-    font-size: 18px;
-    font-weight: 600;
-    color: #092E69;
-}
-.attendance-component .head div .right-side .page-balls {
-    width: 55%;
+
+.attendance-component .head div .page-balls {
+    width: 18%;
     display: flex;
     justify-content: space-around;
 }
@@ -47,5 +39,122 @@
     width: 98%;
     height: 80%;
     margin: auto;
-    background-color: yellow;
+    /* background-color: yellow; */
+    position: relative;
+}
+
+.attendance-component .body .calender {
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-bottom: 2px solid #F3F5F9;
+}
+.attendance-component .body .calender .pt-1 {
+    padding-top: 0rem;
+    width: 230px !important;
+    height: 30px !important;
+    position: absolute;
+    top: -19%;
+    right: 20%;
+}
+.attendance-component .body .calender .font-medium {
+    font-weight: 600;
+}
+.attendance-component .body .calender .text-sm {
+    font-size: 18px;
+    font-weight: 600;
+    color: #092E69;
+}
+
+.attendance-component .body .months {
+    width: 100%;
+    height: 100%;
+}
+.attendance-component .body .month {
+    width: 100%;
+    height: 100%;
+}
+.attendance-component .body .calender .table {
+    width: 100%;
+    height: 100%;
+}
+.attendance-component .body .calender .head_row {
+    width: 100%;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 2px solid #F3F5F9;
+    border-bottom: 2px solid #F3F5F9;
+}
+.attendance-component .body .calender .head_row .head_cell {
+    width: 14%;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000F28;
+}
+.attendance-component .body .calender .row {
+    width: 100%;
+    height: 14%;
+    justify-content: space-around;
+    align-items: center;
+}
+.attendance-component .body .calender .row .cell {
+    background-color: #E7F0FF;
+    width: 12%;
+    height: 95%;
+    border-radius: 8px;
+}
+.attendance-component .body .calender .row .cell .day {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000F28;
+}
+
+@media screen and (max-width: 768px) {
+    .attendance-component
+    {
+        height: 90%;
+        margin-top: 4%;
+    }
+    .attendance-component .head {
+        height: 20%;
+    }
+    .attendance-component .head div
+    {
+        height: 55%;
+        width: 97%;
+        margin: auto;
+    }
+    .attendance-component .head div span
+    {
+        width: 70%;
+        font-size: 19px;
+    }
+    .attendance-component .head div .page-balls
+    {
+        width: 30%;
+        height: auto;
+        flex-direction: row;
+    }
+    .attendance-component .head div .page-balls svg
+    {
+        width: 16%;
+    }
+
+    .attendance-component .body
+    {
+        height: 70%;
+    }
+}
+
+
+.sasi {
+    background-color: cyan;
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 0%;
 }
